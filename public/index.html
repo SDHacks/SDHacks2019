@@ -2,9 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/SDHacks/SDHacks2017/master/static/assets/img/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />    
     <meta name="theme-color" content="#000000" />
+
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow"><!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="subject" content="SD Hacks 2019">
+    <meta property="og:title" content="SD Hacks 2019" />
+
+    <!-- change this -->
+    <meta property="og:description" content="HackXX is UC San Diego's women-centric all inclusive hackathon" />
+    
+    <!-- find out what this is -->
+    <meta property="og:image" content="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/51243873_323500671600761_5807856941761822720_o.jpg?_nc_cat=110&_nc_ht=scontent-lax3-1.xx&oh=958390dbb7021ce43bd1124854be7f96&oe=5CC48BAF" />
+
+    <!-- find out what this is -->
+    <meta property="og:image:secure_url" content="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/51243873_323500671600761_5807856941761822720_o.jpg?_nc_cat=110&_nc_ht=scontent-lax3-1.xx&oh=958390dbb7021ce43bd1124854be7f96&oe=5CC48BAF" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- change this -->
+    <meta name="description" content="HackXX is UC San Diego's women-centric all inclusive hackathon" />
+    <meta name="keywords" content="SD Hacks, 2019, HackXX, HackXX 2019, Hack XX, hackathon, UCSD, UC, University of California San Diego, San Diego, womens, all-inclusive, non-binary, female, women, empower" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -19,20 +45,21 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>SD Hacks 2019</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="app"></div>
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link defer rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114981860-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      gtag('config', 'UA-114981860-2');
+    </script>
   </body>
 </html>
