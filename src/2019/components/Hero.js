@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
+
 import {
     Page,
     Container,
@@ -10,29 +11,30 @@ import {
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const HeroSection = styled(Page)`
-    //background: url("/hero pic.svg");
-    //background-size: 100% 100%;
-    //width: 100%
-    //background-repeat: no-repeat;
-    //min-height: 100%;
-    //height: auto;
-
-    //min-height: 45rem;
-    background-position: 50% 100%;
-
-    //background-image: url('/hero pic.svg');
-    //background-size: 100% 100%;
-    //background-size: cover;
-    //background-repeat: no-repeat;
-    //height: 30rem;
-
-    //width: 100%;
-    background-image: url('/hero pic.svg');
+    // this works on my laptop but not macs (about us is too high)
+    /*background-image: url('/pls work.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    //min-height: 60rem;
-    height: auto;
-    position: relative;
+    background-position: 0% 0%;
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 4.5rem;*/
+
+
+    background: url('/pls work.svg');
+    background-repeat: no-repeat;
+    //background-size: contain;
+    //background-size: 180% 120%;
+    background-size: cover;
+    margin-top: 5rem;
+    //padding-top: 5rem;
+    //padding-top: 20rem;
+    //background-size: 100%;
+    //background-position: bottom;
+    min-height: 90vh;
+
+    width: 100%;
 `;
 
 /*const HeroContainer = styled(Container)`
@@ -40,6 +42,11 @@ const HeroSection = styled(Page)`
     background-repeat: no-repeat;
     background-size: auto;
 `;*/
+
+const why = styled.img`
+    width: 100%;
+    z-index: 1;
+`
 
 const HeroImage = styled.img`
     width: 60%;
