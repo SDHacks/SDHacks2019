@@ -23,57 +23,14 @@ const pastSponsors = [
 ]
 
 const tierOneSponsor = [
-    {
-        name: 'Northrop Grumman',
-        //logo: '/sponsors/northrop-grumman.svg',
-        logo: '/sponsors/diamond.png',
-        link: 'http://www.northropgrumman.com/Pages/default.aspx'
-    },
+
 ].map(x => ({...x, tier: 0}));
 
 const tierTwoSponsor = [
     {
-        name: 'ServiceNow',
-        //logo: '/sponsors/snow.png',
-        logo: '/sponsors/iron.png',
-        link: 'https://servicenow.com'
-    },
-    {
-        name: 'American Express',
-        //logo: '/sponsors/amex.jpg',
-        logo: '/sponsors/iron.png',
-        link: 'https://www.americanexpress.com',
-        className: 'w-75'
-    },
-    {
-        name: 'Cisco',
-        logo: '/sponsors/iron.png',
-        //logo: '/sponsors/cisco.svg',
-        link: 'https://cisco.com'
-    },
-    {
-        name: 'Surcle',
-        logo: '/sponsors/iron.png',
-        //logo: '/sponsors/surcle.png',
-        link: 'https://surcle.io'
-    },
-    {
-        name: 'Google Cloud Platform',
-        logo: '/sponsors/iron.png',
-        //logo: '/sponsors/gcp.png',
-        link: 'https://cloud.google.com'
-    },
-    {
-        name: 'GitHub',
-        logo: '/sponsors/iron.png',
-        //logo: '/sponsors/git.png',
-        link: 'https://github.com'
-    },
-    {
-        name: 'iTradeNetwork',
-        logo: '/sponsors/iron.png',
-        //logo: '/sponsors/itradenetwork.png',
-        link: 'https://itradenetwork.com',
+        name: 'Amazon Web Services',
+        logo: '/sponsors/aws.svg',
+        link: 'https://aws.amazon.com/'
     }
 ].map(x => ({...x, tier: 1}));
 

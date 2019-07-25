@@ -47,7 +47,7 @@ class Sponsors extends Component {
                             <div className="row align-items-center justify-content-center">
                                 {this.renderSponsors(sponsors)}
                             </div>
-                            <div className="row">
+                            <div className="row justify-content-center">
                                 <SectionHeader>Partners</SectionHeader>
                             </div>
                             <div className="row align-items-center justify-content-center">

@@ -11,7 +11,7 @@ import {
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const HeroSection = styled(Page)`
-    // this works on my laptop but not macs (about us is too high)
+    // this works on my laptop but not macs (about us is too high on macs?)
     /*background-image: url('/pls work.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,18 +21,11 @@ const HeroSection = styled(Page)`
     padding-top: 5rem;
     padding-bottom: 4.5rem;*/
 
-
-    background: url('/pls work.svg');
+    background: url('/pls pls work.svg'), radial-gradient(629.21px at 43.44% 42.39%, #FFFFFF 0%, #C4E9F7 29.04%, #81B9F0 100%);
     background-repeat: no-repeat;
-    //background-size: contain;
-    //background-size: 180% 120%;
     background-size: cover;
-    margin-top: 5rem;
-    //padding-top: 5rem;
-    //padding-top: 20rem;
-    //background-size: 100%;
-    //background-position: bottom;
-    min-height: 90vh;
+    background-position: bottom 100%;
+    min-height: 130vh;
 
     width: 100%;
 `;
