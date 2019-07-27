@@ -56,12 +56,22 @@ const ThirdTracksTitle = styled.div`
 
 const TracksDescription = styled.div`
     display: block;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
     text-align: left;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 45px;
+    padding: 1.25rem 2rem;
+    z-index: 10000;
+    position: relative;
 
     ${mediaBreakpointDown('md', `
         text-align: center;
     `)}
+`
+
+const Fish = styled.img`
+    width: 80%
+    margin-top: 1rem;
 `
 
 class Tracks extends Component {
@@ -78,18 +88,21 @@ class Tracks extends Component {
                                 <div className="col-md-4 text-center">
                                     <TracksImg src="/tracks/sustainability.svg" />
                                     <TracksTitle>Sustainability</TracksTitle>
-                                    <TracksDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</TracksDescription>
+                                    <TracksDescription>Whether it’s tackling climate change or saving sea turtles, create and bring to life something that will help contribute towards solving and/or educating about real world environmental challenges.</TracksDescription>
                                 </div>
                                 <div className="col-md-4 text-center">
                                     <TracksImg src="/tracks/wellbeing.svg" />
                                     <TracksTitle>Health and Wellness</TracksTitle>
-                                    <TracksDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</TracksDescription>
+                                    <TracksDescription>Because our lives are getting busier every day, we are squeezing more and more activities in a single day. With this, it becomes difficult to take care of ourselves. Devise a solution that allows people to live a healthier life amidst the daily chaos of society.</TracksDescription>
                                 </div>
                                 <div className="col-md-4 text-center">
                                     <ThirdTrackImg src="/tracks/education.svg" />
                                     <ThirdTracksTitle>Education</ThirdTracksTitle>
-                                    <TracksDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</TracksDescription>
+                                    <TracksDescription>Nowadays, almost everyone has access to the internet, but the large amount of information makes it difficult to identify reliable and reputable sources of information. Try using modern technology to combat misinformation.</TracksDescription>
                                 </div>
+                            </div>
+                            <div className="row justify-content-center">
+                                <Fish src="/sea-animals/fish.svg" />
                             </div>
                         </div>
                     </SectionContent>

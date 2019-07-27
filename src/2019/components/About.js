@@ -25,6 +25,11 @@ const AboutHeader = styled(SectionHeader)`
     `)}
 `
 
+const AboutContent = styled.div`
+    padding-left: 0;
+    margin-left: 0;
+`
+
 class About extends Component {
     render() {
         return (
@@ -32,11 +37,11 @@ class About extends Component {
                 <Container className="d-flex mx-auto h-100">
                     <SectionContent>
                         <div className="container-fluid">
-                            <div className="row">
-                                <AboutHeader>About SD Hacks</AboutHeader>
-                            </div>
+                            <AboutHeader>About SD Hacks</AboutHeader>
                             <div className="row my-4">
-                                <div className="col-md-6">Minecraft is a sandbox video game originally created by Markus "Notch" Persson, maintained by Mojang AB, and part of Xbox Game Studios (then known as Microsoft Studios). It is heavily inspired by Infiniminer. From its creation, Minecraft was developed almost exclusively by Notch until Jens "Jeb" Bergensten started working with him, and has since become head of its development. It features music by Daniel "C418" Rosenfeld and paintings by Kristoffer Zetterstrand.</div>
+                                <div className="col-md-6">
+                                    <AboutContent>SD Hacks has been one of the largest hackathons in California since its inception back in 2015 and is excited to be celebrating its 5th anniversary. We take pride in being a fully student organized event, while partnering with numerous other student-run engineering organizations at UC San Diego. SD Hacks 2019 will provide the support and tools necessary to develop projects ranging from VR/AR games to microcontroller based technologies. With mentorship coming from a variety of engineering disciplines and companies, SD Hacks 2019 is shaping up to become an unforgettable 36 hours of collaboration, empowerment, and innovation.</AboutContent>
+                                </div>
                                 <div className="col-md-6">
                                     <img src="/sea-animals/turtle.svg"></img>
                                 </div>

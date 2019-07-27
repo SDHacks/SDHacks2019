@@ -92,7 +92,7 @@ class Footer extends Component {
                 <ContentSection className="contact" id="contact">
                     <div className="container-fluid d-flex align-items-center h-100">
                         <ContactHeader className="m-auto">
-                            Talk to us at <ContactLink className="contact__link" href="mailto:hello@sdhacks.io" target="_blank">hello@sdhacks.io</ContactLink> if you have any questions.
+                            Talk to us at <ContactLink className="contact__link" href="mailto:sdhacks@tesc.ucsd.edu" target="_blank">sdhacks@tesc.ucsd.edu</ContactLink> if you have any questions.
                         </ContactHeader>
                     </div>
                 </ContentSection>
@@ -120,7 +120,7 @@ class Footer extends Component {
                                 </FooterLink>
                             </FooterLinkItem>
                             <FooterLinkItem>
-                                <FooterLink target="_new" href="mailto://hello@tesc.ucsd.edu">
+                                <FooterLink target="_new" href="mailto://sdhacks@tesc.ucsd.edu">
                                 <i className="fas fa-envelope-square" />
                                 </FooterLink>
                             </FooterLinkItem>

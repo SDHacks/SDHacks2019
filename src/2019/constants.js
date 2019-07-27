@@ -20,5 +20,5 @@ export const SponsorsConstants = {
 }
 
 export const FooterConstants = {
-    background: `#004666;`
+    background: `#002136;`
 }

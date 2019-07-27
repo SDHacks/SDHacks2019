@@ -29,7 +29,7 @@ export const SectionHeader = styled.h1`
 export const SectionContent = styled.div`
     flex-grow: 1;
     // padding-left: 2rem;
-    //padding-left: 0;
+    padding-left: 15px;
     font-size: 1.3rem;
     color: white;
     margin-bottom: 50px;

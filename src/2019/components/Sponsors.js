@@ -13,10 +13,16 @@ import {SponsorsConstants} from '../constants';
 import {sponsors, partners} from '../data/Sponsors.js'
 
 const SponsorsSection = styled(Page)`
-    background: ${SponsorsConstants.background};
+    background: url('/sea-animals/silhouette.svg'), ${SponsorsConstants.background};
+    background-position: bottom;
+    background-repeat: no-repeat;
 `
 
 const SponsorContainer = styled.a`
+`
+
+const AnglerFish = styled.img`
+    width: 60%;
 `
 
 function Sponsor(props) {
@@ -47,11 +53,19 @@ class Sponsors extends Component {
                             <div className="row align-items-center justify-content-center">
                                 {this.renderSponsors(sponsors)}
                             </div>
-                            <div className="row justify-content-center">
+                            {/*<div className="row justify-content-center">
                                 <SectionHeader>Partners</SectionHeader>
                             </div>
                             <div className="row align-items-center justify-content-center">
                                 {this.renderSponsors(partners)}
+                            </div>*/}
+
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <AnglerFish src="/sea-animals/anglerfish.svg" />
+                                </div>
+                                <div className="col-md-6"></div>
+                                <div className="col-md-6"></div>
                             </div>
                         </div>
                     </SectionContent>

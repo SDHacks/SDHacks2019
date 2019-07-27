@@ -21,7 +21,7 @@ const HeroSection = styled(Page)`
     padding-top: 5rem;
     padding-bottom: 4.5rem;*/
 
-    background: url('/pls pls work.svg'), radial-gradient(629.21px at 43.44% 42.39%, #FFFFFF 0%, #C4E9F7 29.04%, #81B9F0 100%);
+    background: url('/hero.svg'), radial-gradient(629.21px at 43.44% 42.39%, #FFFFFF 0%, #C4E9F7 29.04%, #81B9F0 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 100%;
@@ -43,10 +43,11 @@ const why = styled.img`
 
 const HeroImage = styled.img`
     width: 60%;
+    margin-top: -8rem;
 
     ${mediaBreakpointDown('md', `
 
-        margin-top: 3rem;
+        //margin-top: 3rem;
     `)}
 `;
 
