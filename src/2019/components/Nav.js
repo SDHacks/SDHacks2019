@@ -6,7 +6,6 @@ import {Link, withRouter} from 'react-router-dom';
 import { mediaBreakpointDown } from '../../breakpoints';
 
 const NavContainer = styled.nav`
-    //background: transparent;
     position: fixed;
     top: 0;
     width: 100%;
@@ -41,10 +40,10 @@ class SDHacksNav extends Component {
 
     componentDidMount() {
         let _nav = $("#top-nav");
-        const SCROLL_TRESHOLD = 2 * _nav.height();
+        const SCROLL_THRESHOLD = 2 * _nav.height();
         $(window).scroll(function () {
-            if ($(this).scrollTop() > SCROLL_TRESHOLD) { 
-                //make nav white when below treshold
+            if ($(this).scrollTop() > SCROLL_THRESHOLD) { 
+                //make nav white when below threshold
                 _nav.addClass('bg-white shadow');
             } else {
                 //make nav transparent only if the nav is collapsed
@@ -55,7 +54,7 @@ class SDHacksNav extends Component {
         });
 
         $('.navbar-toggler').on('click', (e) => {
-            if ($('.navbar-toggler').scrollTop() < SCROLL_TRESHOLD) {
+            if ($('.navbar-toggler').scrollTop() < SCROLL_THRESHOLD) {
                 if (_nav.hasClass('nav__white')) {
                     _nav.removeClass('nav__white')
                 }
