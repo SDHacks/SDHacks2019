@@ -20,15 +20,12 @@ const PaddedRow = styled.div`
 `
 
 const FaqQuestion = styled.h3`
-    //font-size: 2rem;
     font-weight: bold;
     color: white;
-    //display: inline-block;
     margin-bottom: 0.5rem;
 `
 
 const FaqAnswer = styled.p`
-    //font-size: 1.5rem;
     color: white;
     margin-bottom: 0.1rem;
 `
@@ -36,11 +33,9 @@ const FaqAnswer = styled.p`
 const FaqBox = styled.div`
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
-    //padding: 1rem 1.5rem;
     padding: 1rem 1rem 0.75rem 1.5rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
-    //padding-left: 0.5rem;
     vertical-align: middle;
 `
 

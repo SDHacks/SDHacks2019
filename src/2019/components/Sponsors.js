@@ -9,17 +9,31 @@ import {
 } from '../styles';
 
 import {SponsorsConstants} from '../constants';
-
+import {mediaBreakpointDown} from '../../breakpoints';
 import {sponsors, partners} from '../data/Sponsors.js'
 
 const SponsorsSection = styled(Page)`
     background: url('/sea-animals/silhouette.svg'), ${SponsorsConstants.background};
     background-position: bottom;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
 `
 
 const SponsorContainer = styled.a`
 `
+
+const SponsorContent = styled(SectionContent)`
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 45px;
+`
+
+/*const SponsorItem = styled.div`
+    ${mediaBreakpointDown('md', `
+        text-align: center;
+        width: 40%;
+    `)}
+`*/
 
 const AnglerFish = styled.img`
     width: 60%;
@@ -50,6 +64,7 @@ class Sponsors extends Component {
                             <div className="row justify-content-center">
                                 <SectionHeader>Sponsors</SectionHeader>
                             </div>
+                            {/*<SponsorContent>
                             <div className="row align-items-center justify-content-center">
                                 {this.renderSponsors(sponsors)}
                             </div>
@@ -58,7 +73,12 @@ class Sponsors extends Component {
                             </div>
                             <div className="row align-items-center justify-content-center">
                                 {this.renderSponsors(partners)}
-                            </div>*/}
+                            </div>}
+                            </SponsorContent>*/}
+
+                            <SponsorContent className="row align-items-center justify-content-center">
+                                {this.renderSponsors(sponsors)}
+                            </SponsorContent>
 
                             <div className="row">
                                 <div className="col-md-6">

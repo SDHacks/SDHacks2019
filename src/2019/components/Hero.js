@@ -21,7 +21,7 @@ const HeroSection = styled(Page)`
     padding-top: 5rem;
     padding-bottom: 4.5rem;*/
 
-    background: url('/hero.svg'), radial-gradient(629.21px at 43.44% 42.39%, #FFFFFF 0%, #C4E9F7 29.04%, #81B9F0 100%);
+    background: url('/hero.svg'), linear-gradient(45deg, #DDF2FA, #C4E9F7, #81B9F0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 100%;
@@ -43,7 +43,7 @@ const why = styled.img`
 
 const HeroImage = styled.img`
     width: 60%;
-    margin-top: -8rem;
+    margin-top: -10rem;
 
     ${mediaBreakpointDown('md', `
 
@@ -110,11 +110,11 @@ class Hero extends Component {
                                                 Apply
                                             </CTA>                      
                                         </Button>
-                                        <Button href="https://www.tesc.events" target="_blank" className="text-white">
+                                        {/*<Button href="https://www.tesc.events" target="_blank" className="text-white">
                                             <CTA className="btn btn-outline-light" >
                                                 Volunteer
                                             </CTA>                      
-                                        </Button>
+                                        </Button>*/}
                                     </HeroCopy>
                                 </div>
                             </Container>

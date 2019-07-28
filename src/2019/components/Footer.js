@@ -10,7 +10,6 @@ const ContentSection = styled.section`
     height: 18rem;
     position: relative;
     transform: translateY(-2px);
-    border-radius: 0 0 3rem 3rem;
 
     &:before {
         display: block;

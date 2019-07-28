@@ -15,6 +15,8 @@ import {mediaBreakpointDown} from '../../breakpoints';
 const TracksSection = styled(Page)`
     background: ${TracksConstants.gradient};
     height: auto;
+    position: relative;
+    z-index: 2;
 `
 
 const TracksHeader = styled(SectionHeader)`
@@ -98,7 +100,7 @@ class Tracks extends Component {
                                 <div className="col-md-4 text-center">
                                     <ThirdTrackImg src="/tracks/education.svg" />
                                     <ThirdTracksTitle>Education</ThirdTracksTitle>
-                                    <TracksDescription>Nowadays, almost everyone has access to the internet, but the large amount of information makes it difficult to identify reliable and reputable sources of information. Try using modern technology to combat misinformation.</TracksDescription>
+                                    <TracksDescription>With more students receiving a college education, it is imperative that they can seize every opportunity. Whether it's taking a step into academia or improving the quality of one's education, construct a project that will assist in expanding students' knowledge.</TracksDescription>
                                 </div>
                             </div>
                             <div className="row justify-content-center">

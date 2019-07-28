@@ -11,6 +11,15 @@ import Faq from './components/Faq';
 import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
 
+import styled from 'styled-components';
+
+const boop = styled.div`
+    background-color: black;
+    position: relative;
+    z-index: 100000;
+
+`
+
 class SDHacks2019Page extends Component {
 
     render() {

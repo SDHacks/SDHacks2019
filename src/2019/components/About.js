@@ -9,12 +9,13 @@ import {
 } from '../styles';
 
 import {AboutConstants} from '../constants';
-
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const AboutSection = styled(Page)`
     background: ${AboutConstants.gradient};
     height: auto;
+    position: relative;
+    z-index: 100;
 `
 
 const AboutHeader = styled(SectionHeader)`

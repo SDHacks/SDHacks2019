@@ -13,6 +13,8 @@ import {ScheduleConstants} from '../constants';
 
 const ScheduleSection = styled(Page)`
     background: ${ScheduleConstants.background};
+    position: relative;
+    z-index: 4;
 `
 
 const PaddedRow = styled.div`

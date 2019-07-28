@@ -84,7 +84,6 @@ class SDHacksNav extends Component {
     render() {
         return (
             <NavContainer className="navbar navbar-expand-lg navbar-light" id="top-nav">
-                {/*<NavLogo src="/dirt block.png"/>*/}
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
                 </button>
@@ -105,9 +104,9 @@ class SDHacksNav extends Component {
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#sponsors" onClick={this.clickScroll}>Sponsors</NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/*<li className="nav-item">
                             <NavLink className="nav-link" href="https://www.google.com/" onClick={this.clickScroll}>CSE Reunion</NavLink>
-                        </li>
+                        </li>*/}
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#contact" onClick={this.clickScroll}>Contact</NavLink>
                         </li>
