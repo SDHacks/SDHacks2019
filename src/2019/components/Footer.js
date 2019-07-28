@@ -6,6 +6,7 @@ import {FooterConstants} from '../constants';
 
 const ContentSection = styled.section`
     background: ${FooterConstants.background};
+    z-index: 2;
     text-align: center;
     height: 18rem;
     position: relative;

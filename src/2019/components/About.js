@@ -12,10 +12,15 @@ import {AboutConstants} from '../constants';
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const AboutSection = styled(Page)`
-    background: ${AboutConstants.gradient};
+    //background: ${AboutConstants.gradient};
     height: auto;
     position: relative;
     z-index: 100;
+    padding-bottom: 10rem;
+
+    ${mediaBreakpointDown('lg', `
+        padding-bottom: 2rem;
+    `)}
 `
 
 const AboutHeader = styled(SectionHeader)`
@@ -29,6 +34,16 @@ const AboutHeader = styled(SectionHeader)`
 const AboutContent = styled.div`
     padding-left: 0;
     margin-left: 0;
+    /*background: rgba(255, 255, 255, 0.2);
+    border-radius: 45px;
+    padding: 1.25rem 2rem;*/
+`
+
+const Turtle = styled.img`
+    display: none;
+    ${mediaBreakpointDown('md', `
+        display: block;
+    `)}
 `
 
 class About extends Component {
@@ -40,11 +55,11 @@ class About extends Component {
                         <div className="container-fluid">
                             <AboutHeader>About SD Hacks</AboutHeader>
                             <div className="row my-4">
-                                <div className="col-md-6">
+                                <div className="col-md-5">
                                     <AboutContent>SD Hacks has been one of the largest hackathons in California since its inception back in 2015 and is excited to be celebrating its 5th anniversary. We take pride in being a fully student organized event, while partnering with numerous other student-run engineering organizations at UC San Diego. SD Hacks 2019 will provide the support and tools necessary to develop projects ranging from VR/AR games to microcontroller based technologies. With mentorship coming from a variety of engineering disciplines and companies, SD Hacks 2019 is shaping up to become an unforgettable 36 hours of collaboration, empowerment, and innovation.</AboutContent>
                                 </div>
                                 <div className="col-md-6">
-                                    <img src="/sea-animals/turtle.svg"></img>
+                                    <Turtle src="/sea-animals/turtle.svg" />
                                 </div>
                             </div>
                         </div>

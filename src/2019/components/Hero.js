@@ -11,22 +11,11 @@ import {
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const HeroSection = styled(Page)`
-    // this works on my laptop but not macs (about us is too high on macs?)
-    /*background-image: url('/pls work.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 0%;
-    width: 100%;
-    margin-top: 4rem;
-    padding-top: 5rem;
-    padding-bottom: 4.5rem;*/
-
     background: url('/hero.svg'), linear-gradient(45deg, #DDF2FA, #C4E9F7, #81B9F0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 100%;
     min-height: 130vh;
-
     width: 100%;
 `;
 
@@ -105,7 +94,7 @@ class Hero extends Component {
                                         <HeroContent>October 25 - 27</HeroContent>
                                         <HeroContent>RIMAC, UC San Diego</HeroContent>
 
-                                        <Button href="https://www.tesc.events" target="_blank" className="text-white">
+                                        <Button href="https://www.tesc.events/register/sdhacks2019" target="_blank" className="text-white">
                                             <CTA className="btn btn-outline-light" >
                                                 Apply
                                             </CTA>                      

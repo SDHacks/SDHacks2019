@@ -13,10 +13,15 @@ import {TracksConstants} from '../constants';
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const TracksSection = styled(Page)`
-    background: ${TracksConstants.gradient};
+    //background: ${TracksConstants.gradient};
     height: auto;
     position: relative;
     z-index: 2;
+    //padding-top: 10rem;
+
+    ${mediaBreakpointDown('lg', `
+        //padding-top: 2rem;
+    `)}
 `
 
 const TracksHeader = styled(SectionHeader)`

@@ -12,7 +12,7 @@ import {
 import {ScheduleConstants} from '../constants';
 
 const ScheduleSection = styled(Page)`
-    background: ${ScheduleConstants.background};
+    //background: ${ScheduleConstants.background};
     position: relative;
     z-index: 4;
 `

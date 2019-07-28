@@ -12,7 +12,9 @@ import {
 import {FaqConstants} from '../constants';
 
 const FaqSection = styled(Page)`
-    background: ${FaqConstants.gradient};
+    //background: ${FaqConstants.gradient};
+    position: relative;
+    z-index: 2;
 `
 
 const PaddedRow = styled.div`

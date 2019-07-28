@@ -13,11 +13,21 @@ import Footer from './components/Footer';
 
 import styled from 'styled-components';
 
-const boop = styled.div`
-    background-color: black;
-    position: relative;
-    z-index: 100000;
+import {WrapperConstants} from './constants';
+import {mediaBreakpointDown} from '../breakpoints';
 
+import {
+    Page
+} from './styles';
+
+const Boop = styled(Page)`
+    //margin-top: -4rem;
+    background: url("/rocks_cutoff_with_turtle.svg"), ${WrapperConstants.gradient};
+    background-repeat: no-repeat;
+
+    ${mediaBreakpointDown('md', `
+        background: ${WrapperConstants.gradient};
+    `)}
 `
 
 class SDHacks2019Page extends Component {
@@ -27,11 +37,14 @@ class SDHacks2019Page extends Component {
             <>
                 <Nav />
                 <Hero />
-                <About />
-                <Tracks />
-                <Schedule />
-                <Faq />
+                <Boop>
+                    <About />
+                    <Tracks />
+                    <Schedule />
+                    <Faq />
+                </Boop>
                 <Sponsors />
+
                 <Footer />
             </>
         )

@@ -6,7 +6,7 @@ import {Link, withRouter} from 'react-router-dom';
 import { mediaBreakpointDown } from '../../breakpoints';
 
 const NavContainer = styled.nav`
-    background: transparent;
+    //background: transparent;
     position: fixed;
     top: 0;
     width: 100%;
