@@ -37,7 +37,7 @@ class SDHacks2019Page extends Component {
             <>
                 <Nav />
                 <Hero />
-                <Boop>
+                {/*<Boop>
                     <About />
                     <Tracks />
                     <Schedule />
@@ -45,7 +45,7 @@ class SDHacks2019Page extends Component {
                 </Boop>
                 <Sponsors />
 
-                <Footer />
+                <Footer />*/}
             </>
         )
     }

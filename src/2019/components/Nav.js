@@ -6,6 +6,7 @@ import {Link, withRouter} from 'react-router-dom';
 import { mediaBreakpointDown } from '../../breakpoints';
 
 const NavContainer = styled.nav`
+    background: transparent;
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,6 +23,7 @@ const NavLink = styled.a`
     text-align: center;
     margin: 0.2rem;
 `
+
 const NavLogo = styled.img`
     width: 4rem;
     ${mediaBreakpointDown('md', `
@@ -41,6 +43,9 @@ class SDHacksNav extends Component {
     componentDidMount() {
         let _nav = $("#top-nav");
         const SCROLL_THRESHOLD = 2 * _nav.height();
+
+        console.log("scroll threshold: " + SCROLL_THRESHOLD);
+
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_THRESHOLD) { 
                 //make nav white when below threshold
@@ -59,7 +64,6 @@ class SDHacksNav extends Component {
                     _nav.removeClass('nav__white')
                 }
                 else {
-                    console.log("here");
                     _nav.addClass('nav__white');
                 }
             } 
@@ -116,4 +120,4 @@ class SDHacksNav extends Component {
     }
 }
 
-export default withRouter(SDHacksNav);
+export default withRouter(SDHacksNav); 

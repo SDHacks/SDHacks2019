@@ -14,8 +14,8 @@ import {mediaBreakpointDown} from '../../breakpoints';
 const AboutSection = styled(Page)`
     //background: ${AboutConstants.gradient};
     height: auto;
-    position: relative;
-    z-index: 100;
+    //position: relative;
+    //z-index: 100;
     padding-bottom: 10rem;
 
     ${mediaBreakpointDown('lg', `

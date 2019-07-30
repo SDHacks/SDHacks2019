@@ -10,6 +10,8 @@ import {
 
 import {mediaBreakpointDown} from '../../breakpoints';
 
+import {ReactComponent as Logo} from '../logo.svg';
+
 const HeroSection = styled(Page)`
     background: url('/hero.svg'), linear-gradient(45deg, #DDF2FA, #C4E9F7, #81B9F0);
     background-repeat: no-repeat;
@@ -17,6 +19,11 @@ const HeroSection = styled(Page)`
     background-position: bottom 100%;
     min-height: 130vh;
     width: 100%;
+
+    ${mediaBreakpointDown('md', `
+        background-position: bottom;
+        background-size: contain;
+    `)}
 `;
 
 /*const HeroContainer = styled(Container)`
@@ -36,7 +43,7 @@ const HeroImage = styled.img`
 
     ${mediaBreakpointDown('md', `
 
-        //margin-top: 3rem;
+        margin-top: -5rem;
     `)}
 `;
 
@@ -91,7 +98,7 @@ class Hero extends Component {
                                     <HeroImage src="/logo.svg" className="img-fluid" />
                                     <HeroCopy className="text-center">
 
-                                        <HeroContent>October 25 - 27</HeroContent>
+                                        <HeroContent>October 25 - 27, 2019</HeroContent>
                                         <HeroContent>RIMAC, UC San Diego</HeroContent>
 
                                         <Button href="https://www.tesc.events/register/sdhacks2019" target="_blank" className="text-white">
