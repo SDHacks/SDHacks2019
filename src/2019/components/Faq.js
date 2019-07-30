@@ -9,18 +9,6 @@ import {
     SectionHeader
 } from '../styles';
 
-import {FaqConstants} from '../constants';
-
-const FaqSection = styled(Page)`
-    //background: ${FaqConstants.gradient};
-    //position: relative;
-    //z-index: 2;
-`
-
-const PaddedRow = styled.div`
-    margin: 7rem 0;
-`
-
 const FaqQuestion = styled.h3`
     font-weight: bold;
     color: white;
@@ -58,7 +46,7 @@ const Stingray = styled.img`
 class Faq extends Component {
     render() {
         return (
-            <FaqSection id="faq">
+            <Page id="faq">
                 <Container className="d-flex mx-auto h-100">
                     <SectionContent>
                         <div className="container-fluid h-75">
@@ -124,7 +112,7 @@ class Faq extends Component {
                         </div>
                     </SectionContent>
                 </Container>
-            </FaqSection>
+            </Page>
         )
     }
 }

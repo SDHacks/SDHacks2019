@@ -8,14 +8,10 @@ import {
     SectionContent,
 } from '../styles';
 
-import {AboutConstants} from '../constants';
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const AboutSection = styled(Page)`
-    //background: ${AboutConstants.gradient};
     height: auto;
-    //position: relative;
-    //z-index: 100;
     padding-bottom: 10rem;
 
     ${mediaBreakpointDown('lg', `
@@ -34,9 +30,6 @@ const AboutHeader = styled(SectionHeader)`
 const AboutContent = styled.div`
     padding-left: 0;
     margin-left: 0;
-    /*background: rgba(255, 255, 255, 0.2);
-    border-radius: 45px;
-    padding: 1.25rem 2rem;*/
 `
 
 const Turtle = styled.img`

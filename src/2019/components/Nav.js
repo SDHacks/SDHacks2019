@@ -12,7 +12,6 @@ const NavContainer = styled.nav`
     width: 100%;
     z-index: 1000;
     padding: 1rem 10%;
-
     transition: background 0.2s ease-in;
 `
 
@@ -43,8 +42,6 @@ class SDHacksNav extends Component {
     componentDidMount() {
         let _nav = $("#top-nav");
         const SCROLL_THRESHOLD = 2 * _nav.height();
-
-        console.log("scroll threshold: " + SCROLL_THRESHOLD);
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_THRESHOLD) { 

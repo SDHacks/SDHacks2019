@@ -12,7 +12,6 @@ export const Container = styled.div`
     `)}
 `;
 
-// put font here once you figure it out
 export const SectionHeader = styled.h1`
     color: white;
     font-weight: 800;
@@ -25,10 +24,8 @@ export const SectionHeader = styled.h1`
     `)}
 `
 
-// put font here once you figure it out
 export const SectionContent = styled.div`
     flex-grow: 1;
-    // padding-left: 2rem;
     padding-left: 15px;
     font-size: 1.3rem;
     color: white;
@@ -67,7 +64,6 @@ export const WhiteButton = styled.a`
     background: transparent;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    //margin-top: 0.75rem;
     position: relative;
     z-index: 1;
     font-size: 1.4rem;

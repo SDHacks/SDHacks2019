@@ -1,21 +1,12 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
-
 import {
     Page,
     Container,
     SectionContent,
     SectionHeader
 } from '../styles';
-
-import {ScheduleConstants} from '../constants';
-
-const ScheduleSection = styled(Page)`
-    //background: ${ScheduleConstants.background};
-    position: relative;
-    z-index: 4;
-`
 
 const PaddedRow = styled.div`
     margin: 2rem 0;
@@ -25,7 +16,7 @@ const PaddedRow = styled.div`
 class Schedule extends Component {
     render() {
         return (
-            <ScheduleSection id="schedule">
+            <Page id="schedule">
                 <Container className="d-flex mx-auto h-100">
                     <SectionContent>
                         <div className="container-fluid h-75">
@@ -38,7 +29,7 @@ class Schedule extends Component {
                         </div>
                     </SectionContent>
                 </Container>
-            </ScheduleSection>
+            </Page>
         )
     }
 }

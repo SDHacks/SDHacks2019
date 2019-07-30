@@ -52,8 +52,6 @@ const FooterLinks = styled.ul`
 
 const FooterLinkItem = styled.li`
     font-size: 1.75rem;
-    //width: 80%;
-    //margin-left: 10%;
 
     &:not(:first-child) {
       margin-top: 0;
@@ -73,6 +71,7 @@ const FooterLink = styled.a`
     i {
     }
 `
+
 const FooterLogo = styled.img`
     display: block;
     margin: auto;

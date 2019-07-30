@@ -8,36 +8,25 @@ import {
     SectionContent,
 } from '../styles';
 
-import {TracksConstants} from '../constants';
-
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const TracksSection = styled(Page)`
-    //background: ${TracksConstants.gradient};
     height: auto;
     position: relative;
     z-index: 2;
-    //padding-top: 10rem;
-
-    ${mediaBreakpointDown('lg', `
-        //padding-top: 2rem;
-    `)}
 `
 
 const TracksHeader = styled(SectionHeader)`
     display: inline-block;
-    //display: inline;
     text-align: center;
     ${mediaBreakpointDown('sm', `
         margin-top: 2rem;
-        //width: 100%;
     `)}
 `
 
 const TracksImg = styled.img`
     width: 8.5rem;
     margin-top: 3rem;
-    //display: block;
 `
 
 const ThirdTrackImg = styled.img`
@@ -45,7 +34,6 @@ const ThirdTrackImg = styled.img`
 `
 
 const TracksTitle = styled.div`
-    //margin-top: -10rem;
     font-size: 2rem;
     display: block;
 `
@@ -55,15 +43,10 @@ const ThirdTracksTitle = styled.div`
     font-size: 2rem;
     display: block;
     text-align: center;
-
-    /*${mediaBreakpointDown('md', `
-        margin-top: auto;
-    `)}*/
 `
 
 const TracksDescription = styled.div`
     display: block;
-    //font-size: 1.25rem;
     text-align: left;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;

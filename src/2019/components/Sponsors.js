@@ -9,8 +9,7 @@ import {
 } from '../styles';
 
 import {SponsorsConstants} from '../constants';
-import {mediaBreakpointDown} from '../../breakpoints';
-import {sponsors, partners} from '../data/Sponsors.js'
+import {sponsors} from '../data/Sponsors.js'
 
 const SponsorsSection = styled(Page)`
     background: url('/sea-animals/silhouette.svg'), ${SponsorsConstants.background};
@@ -27,13 +26,6 @@ const SponsorContent = styled(SectionContent)`
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
 `
-
-/*const SponsorItem = styled.div`
-    ${mediaBreakpointDown('md', `
-        text-align: center;
-        width: 40%;
-    `)}
-`*/
 
 const AnglerFish = styled.img`
     width: 60%;
