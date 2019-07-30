@@ -36,7 +36,7 @@ function Sponsor(props) {
     console.log(props);
     return (
         <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
-            <img src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`}/>
+            <img src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt=""/>
         </SponsorContainer>
     )
 }

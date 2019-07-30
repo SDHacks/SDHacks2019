@@ -28,6 +28,7 @@ const ContentSection = styled.section`
 `
 
 const ContactHeader = styled.h1`
+    font-family: 'Reem Kufi', sans-serif;
     color: white;
     z-index: 2;
     line-height: 1.7;
@@ -38,6 +39,7 @@ const ContactHeader = styled.h1`
 `
 
 const ContactLink = styled.a`
+    font-family: 'Reem Kufi', sans-serif;
     color: white !important;
 `
 
@@ -46,11 +48,13 @@ const FooterContainer = styled.footer`
 `
 
 const FooterLinks = styled.ul`
+    font-family: 'Reem Kufi', sans-serif;
     list-style: none;
     padding: 0;
 `
 
 const FooterLinkItem = styled.li`
+    font-family: 'Reem Kufi', sans-serif;
     font-size: 1.75rem;
 
     &:not(:first-child) {
@@ -66,6 +70,7 @@ const FooterLinkItem = styled.li`
 `
 
 const FooterLink = styled.a`
+    font-family: 'Reem Kufi', sans-serif;
     color: #004666 !important;
 
     i {

@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import $ from 'jquery';
 
-import {Link, withRouter} from 'react-router-dom';
-import { mediaBreakpointDown } from '../../breakpoints';
+import {withRouter} from 'react-router-dom';
 
 const NavContainer = styled.nav`
     background: transparent;
@@ -21,15 +20,6 @@ const NavLink = styled.a`
     text-decoration: none;
     text-align: center;
     margin: 0.2rem;
-`
-
-const NavLogo = styled.img`
-    width: 4rem;
-    ${mediaBreakpointDown('md', `
-        content: url('/favicon.ico');
-        width: 2.4rem;
-        margin-left: calc(50% - 1.2rem);
-    `)}
 `
 
 class SDHacksNav extends Component {
