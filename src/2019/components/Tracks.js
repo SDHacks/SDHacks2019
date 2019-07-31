@@ -12,30 +12,34 @@ import {mediaBreakpointDown} from '../../breakpoints';
 
 const TracksSection = styled(Page)`
     height: auto;
-    position: relative;
-    z-index: 2;
 `
 
 const TracksHeader = styled(SectionHeader)`
     display: inline-block;
     text-align: center;
-    ${mediaBreakpointDown('sm', `
-        margin-top: 2rem;
-    `)}
 `
 
 const TracksImg = styled.img`
     width: 8.5rem;
     margin-top: 3rem;
+
+    ${mediaBreakpointDown('sm', `
+        width: 40%;
+    `)}
 `
 
 const ThirdTrackImg = styled.img`
     width: 19rem;
+
+    ${mediaBreakpointDown('sm', `
+        width: 80%;
+    `)}
 `
 
 const TracksTitle = styled.div`
     font-size: 2rem;
     display: block;
+    text-align: center;
 `
 
 const ThirdTracksTitle = styled.div`
@@ -43,6 +47,10 @@ const ThirdTracksTitle = styled.div`
     font-size: 2rem;
     display: block;
     text-align: center;
+    
+    ${mediaBreakpointDown('sm', `
+        margin-top: -8rem;
+    `)}
 `
 
 const TracksDescription = styled.div`
@@ -50,7 +58,7 @@ const TracksDescription = styled.div`
     text-align: left;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
-    padding: 1.25rem 2rem;
+    padding: 1.5rem;
     z-index: 10000;
     position: relative;
 
@@ -74,7 +82,7 @@ class Tracks extends Component {
                             <div className="row justify-content-center">
                                 <TracksHeader>Tracks</TracksHeader>
                             </div>
-                            <div className="row justify-content-around">
+                            <div className="row justify-content-center">
                                 <div className="col-md-4 text-center">
                                     <TracksImg src="/tracks/sustainability.svg" />
                                     <TracksTitle>Sustainability</TracksTitle>

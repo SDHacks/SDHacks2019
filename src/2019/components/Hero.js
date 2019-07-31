@@ -29,8 +29,7 @@ const HeroImage = styled.img`
     margin-top: -10rem;
 
     ${mediaBreakpointDown('md', `
-
-        margin-top: -5rem;
+        margin-top: -8rem;
     `)}
 `;
 

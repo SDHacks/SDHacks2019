@@ -23,9 +23,9 @@ const FaqAnswer = styled.p`
 const FaqBox = styled.div`
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
-    padding: 1rem 1rem 0.75rem 1.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     vertical-align: middle;
 `
 
