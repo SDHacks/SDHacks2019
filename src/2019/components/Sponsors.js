@@ -34,11 +34,20 @@ const AnglerFish = styled.img`
 function Sponsor(props) {
     const col = props.col || 'col-md-4 col-lg-4';
     console.log(props);
-    return (
-        <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
-            <img src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt=""/>
-        </SponsorContainer>
-    )
+
+    if (props.size === "small") {
+        return (
+            <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
+                <img src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" width="70%" />
+            </SponsorContainer>
+        )
+    } else {
+        return (
+            <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
+                <img src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" />
+            </SponsorContainer>
+        )
+    }
 }
 
 class Sponsors extends Component {
@@ -68,7 +77,7 @@ class Sponsors extends Component {
                             </div>}
                             </SponsorContent>*/}
 
-                            <SponsorContent className="row align-items-center justify-content-center">
+                            <SponsorContent className="row align-items-center justify-content-around">
                                 {this.renderSponsors(sponsors)}
                             </SponsorContent>
 

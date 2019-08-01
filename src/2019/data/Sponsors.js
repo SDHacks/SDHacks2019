@@ -10,7 +10,14 @@ const tierTwoSponsor = [
     {
         name: 'Amazon Web Services',
         logo: '/sponsors/aws.svg',
-        link: 'https://aws.amazon.com/'
+        link: 'https://aws.amazon.com/',
+        size: 'small'
+    }, 
+    {
+        name: 'Surcle',
+        logo: '/sponsors/surcle.png',
+        link: 'https://surcle.io',
+        size: 'normal'
     }
 ].map(x => ({...x, tier: 1}));
 
