@@ -59,7 +59,7 @@ const TracksDescription = styled.div`
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
     padding: 1.5rem;
-    z-index: 10000;
+    z-index: 100;
     position: relative;
 
     ${mediaBreakpointDown('md', `

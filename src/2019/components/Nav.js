@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import $ from 'jquery';
 
 import {withRouter} from 'react-router-dom';
+import {mediaBreakpointDown} from '../../breakpoints';
 
 const NavContainer = styled.nav`
     background: transparent;
@@ -20,6 +21,16 @@ const NavLink = styled.a`
     text-decoration: none;
     text-align: center;
     margin: 0.2rem;
+`
+
+const NavLogo = styled.img`
+    display: none;
+
+    ${mediaBreakpointDown('md', `
+        display: block;
+        width: 2.4rem;
+        margin-left: calc(50% - 1.2rem);
+    `)}
 `
 
 class SDHacksNav extends Component {
@@ -74,6 +85,7 @@ class SDHacksNav extends Component {
     render() {
         return (
             <NavContainer className="navbar navbar-expand-lg navbar-light" id="top-nav">
+                <NavLogo src="/logo-small.png" />
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
                 </button>
