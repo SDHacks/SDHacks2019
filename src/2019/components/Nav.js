@@ -24,10 +24,10 @@ const NavLink = styled.a`
 `
 
 const NavLogo = styled.img`
-    display: none;
+    width: 8rem;
 
-    ${mediaBreakpointDown('md', `
-        display: block;
+    ${mediaBreakpointDown('sm', `
+        content: url('/logo-small.png');
         width: 2.4rem;
         margin-left: calc(50% - 1.2rem);
     `)}
@@ -85,7 +85,7 @@ class SDHacksNav extends Component {
     render() {
         return (
             <NavContainer className="navbar navbar-expand-lg navbar-light" id="top-nav">
-                <NavLogo src="/logo-small.png" />
+                <NavLogo src="/nav-logo.svg" />
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
                 </button>
