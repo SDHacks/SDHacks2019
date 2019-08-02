@@ -3,7 +3,7 @@
   "name": "SD Hacks 2019",
   "icons": [
     {
-      "src": "/logo-small.png",
+      "src": "https://raw.githubusercontent.com/SDHacks/SDHacks2017/master/static/assets/img/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
