@@ -44,17 +44,17 @@ export const HideBelow = (breakpoint) => styled.div`
 `
 
 export const Badge = styled.a`
-    display:block;
-    max-width:80px;
-    min-width:60px;
-    position:fixed;
+    display: block;
+    max-width: 80px;
+    min-width: 60px;
+    position: fixed;
     right: 1rem;
-    top:0;
+    top: 0;
     width:10%;
-    z-index:10000;
+    z-index: 10000;
 
     ${mediaBreakpointDown('lg', `
-        left: 0rem;
+        left: 1rem;
     `)}
 `
 export const WhiteButton = styled.a`

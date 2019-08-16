@@ -25,6 +25,7 @@ const NavLink = styled.a`
 
 const NavLogo = styled.img`
     width: 8rem;
+    margin-left: 2rem;
 
     ${mediaBreakpointDown('sm', `
         content: url('/logo-small.png');
