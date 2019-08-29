@@ -80,11 +80,11 @@ class Hero extends Component {
                                             Apply
                                         </CTA>                      
                                     </Button>
-                                    {/*<Button href="https://www.tesc.events" target="_blank" className="text-white">
+                                    <Button href="https://tesc.typeform.com/to/vgXWp2" target="_blank" className="text-white">
                                         <CTA className="btn btn-outline-light" >
                                             Volunteer
                                         </CTA>                      
-                                    </Button>*/}
+                                    </Button>
                                 </HeroCopy>
                             </div>
                         </Container>
