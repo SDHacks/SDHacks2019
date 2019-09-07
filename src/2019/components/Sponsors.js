@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import {mediaBreakpointDown} from '../../breakpoints';
 
 import {
     Page,
@@ -23,12 +24,33 @@ const SponsorContainer = styled.a`
 `
 
 const SponsorContent = styled(SectionContent)`
+    padding-top: 1rem;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
 `
 
 const AnglerFish = styled.img`
     width: 60%;
+`
+
+const SmallImg = styled.img`
+    width: 70%;
+
+    ${mediaBreakpointDown('md', `
+        width: 40%;
+    `)}
+`
+
+const MediumImg = styled.img`
+    width: 90%;
+
+    ${mediaBreakpointDown('md', `
+        width: 50%;
+    `)}
+`
+
+const LargeImg = styled.img`
+    width: 110%;
 `
 
 function Sponsor(props) {
@@ -38,13 +60,19 @@ function Sponsor(props) {
     if (props.size === "small") {
         return (
             <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
-                <img src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" width="70%" />
+                <SmallImg src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" />
+            </SponsorContainer>
+        )
+    } else  if (props.size === "medium") {
+        return (
+            <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
+                <MediumImg src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" />
             </SponsorContainer>
         )
     } else {
         return (
             <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
-                <img src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" />
+                <LargeImg src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" width="110%"/>
             </SponsorContainer>
         )
     }
