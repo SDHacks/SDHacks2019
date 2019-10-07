@@ -8,6 +8,12 @@ const tierOneSponsor = [
         logo: '/sponsors/northrop-grumman.svg',
         link: 'https://www.northropgrumman.com/Pages/default.aspx',
         size: 'normal'
+    },
+    {
+        name: 'Activbody',
+        logo: '/sponsors/activbody.svg',
+        link: 'https://activbody.com/',
+        size: 'normal'
     }
 ].map(x => ({...x, tier: 0}));
 
