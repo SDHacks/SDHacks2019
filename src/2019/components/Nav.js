@@ -107,9 +107,9 @@ class SDHacksNav extends Component {
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#sponsors" onClick={this.clickScroll}>Sponsors</NavLink>
                         </li>
-                        {/*<li className="nav-item">
-                            <NavLink className="nav-link" href="https://www.google.com/" onClick={this.clickScroll}>CSE Reunion</NavLink>
-                        </li>*/}
+                        <li className="nav-item">
+                            <NavLink className="nav-link" href="http://espresso.sdhacks.io" target="_blank" >Espresso</NavLink>
+                        </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#contact" onClick={this.clickScroll}>Contact</NavLink>
                         </li>
