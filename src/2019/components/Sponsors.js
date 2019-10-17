@@ -44,7 +44,7 @@ function Sponsor(props) {
 
 class Sponsors extends Component {
     renderSponsors(currSponsors) {
-        const COL_LENS = ['col-md-9 col-lg-9', 'col-md-4 col-lg-4', 'col-md-3 col-md-3', 'col-sm-3 col-sm-3'];
+        const COL_LENS = ['col-md-9 col-lg-9', 'col-md-4 col-lg-4', 'col-md-3 col-md-3', 'col-md-2 col-md-2'];
         return currSponsors.map(p => <Sponsor {...p} col={COL_LENS[p.tier]} />)
     }
 

@@ -54,19 +54,25 @@ const tierFourSponsor = [
         name: 'Microsoft',
         logo: '/sponsors/microsoft.svg',
         link: 'https://www.microsoft.com/en-us/',
-        width: '70'
+        width: '80'
     },
     {
         name: 'UCSD ECE',
         logo: '/sponsors/jsoe-ece.svg',
         link: 'http://ece.ucsd.edu/',
-        width: '70'
+        width: '80'
     },
     {
         name: 'Wolfram',
         logo: '/sponsors/wolfram.svg',
         link: 'https://www.wolfram.com/',
-        width: '70'
+        width: '80'
+    },
+    {
+        name: 'Stickermule',
+        logo: '/sponsors/sticker-mule.svg',
+        link: 'http://hackp.ac/mlh-stickermule-hackathons',
+        width: '80'
     }
 ].map(x => ({...x, tier: 2}));
 
@@ -74,21 +80,25 @@ const tierOnePartner = [
     {
         name: 'ACM',
         logo: '/partners/acm.svg',
+        link: 'http://www.acm.org/',
         width: '60'
     },
     {
         name: 'BMES',
         logo: '/partners/bmes.svg',
+        link: 'https://bmes.ucsd.edu',
         width: '60'
     },
     {
         name: 'CSES',
         logo: '/partners/cses.svg',
+        link: 'https://cses.ucsd.edu/#/',
         width: '60'
     },
     {
         name: 'DS3',
         logo: '/partners/ds3.svg',
+        link: 'https://www.facebook.com/DS3UCSD/',
         width: '60'
     }
 ].map(x => ({...x, tier: 3}));
@@ -97,27 +107,32 @@ const tierTwoPartner = [
     {
         name: 'ESW',
         logo: '/partners/esw.svg',
-        width: '50'
+        link: 'https://eswtritons.wordpress.com',
+        width: '55'
     },
     {
         name: 'IEEE',
         logo: '/partners/ieee.svg',
-        width: '50'
+        link: 'http://www.ieee.org/portal/index.jsp',
+        width: '55'
     },
     {
         name: 'SWE',
         logo: '/partners/swe.svg',
-        width: '50'
+        link: 'http://swe.ucsd.edu/',
+        width: '55'
     },
     {
         name: 'Triton XR',
         logo: '/partners/triton-xr.svg',
-        width: '30'
+        link: 'http://tritonxr.ucsd.edu/',
+        width: '35'
     },
     {
         name: 'TSE',
         logo: '/partners/tse.svg',
-        width: '25'
+        link: 'http://tse.ucsd.edu/',
+        width: '30'
     }
 ].map(x => ({...x, tier: 3}));
 
