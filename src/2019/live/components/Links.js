@@ -76,7 +76,7 @@ class Links extends Component {
                 <Divider src="/live/divider.svg"/>
                 <LinkGroup><LinkText className="btn btn-outline-light" href="https://sd-hacks-2019.devpost.com/" target="_blank"><LinkIcon src="/live/devpost.svg"/>Devpost</LinkText></LinkGroup>
                 <Divider src="/live/divider.svg"/>
-                <LinkGroup><LinkText className="btn btn-outline-light" href="/tracks.pdf" target="_blank"><LinkIcon src="/live/challenges.png"/>Challenges</LinkText></LinkGroup>
+                <LinkGroup><LinkText className="btn btn-outline-light" href="https://drive.google.com/file/d/1Cl20KbCEXGyUOk4v1r0XOT-q-O1YFSxD/view" target="_blank"><LinkIcon src="/live/challenges.png"/>Challenges</LinkText></LinkGroup>
                 <Divider src="/live/divider.svg"/>
                 <LinkGroup><LinkText className="btn btn-outline-light" href="https://hackmd.io/@sdhacks/ByGRFqctH" target="_blank"><LinkIcon src="/live/faq.svg"/>FAQ</LinkText></LinkGroup>
                 <Divider src="/live/divider.svg"/>
