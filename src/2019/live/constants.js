@@ -2,10 +2,10 @@ import {
     PURPLE
 } from '../constants';
 
-export const FRI_HOURS = 14
+export const FRI_HOURS = 8
 export const SAT_HOURS = 24
-export const SUN_HOURS = 19
-export const NUM_COLS = FRI_HOURS + SAT_HOURS;
+export const SUN_HOURS = 17
+export const NUM_COLS = FRI_HOURS + SAT_HOURS + SUN_HOURS;
 export const HOUR_WIDTH = 120;
 export const CALENDAR_MARGIN = 40;
 export const CAL_WIDTH = (HOUR_WIDTH * NUM_COLS);

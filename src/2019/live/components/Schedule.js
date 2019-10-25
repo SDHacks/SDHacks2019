@@ -31,7 +31,8 @@ import {
     VERTICAL_HOUR_LINE_WIDTH,
     ROW_HEIGHT,
     ROW_MARGIN_TOP,
-    LIGHT_BLUE as LIVE_BLUE
+    LIGHT_BLUE as LIVE_BLUE,
+    HOVER_BLUE
 } from '../constants';
 
 import { mediaBreakpointUp } from '../../../breakpoints';
@@ -84,7 +85,14 @@ const Calendar = styled.div`
     display: block;
     margin-top: 1rem;
     position: relative;
-    background: white;
+    background: repeating-linear-gradient(
+        to right,
+        white,
+        white ${GRADIENT_OFFSET}px,
+        #D3D3D3 ${GRADIENT_OFFSET + VERTICAL_HOUR_LINE_WIDTH}px,
+        white ${GRADIENT_OFFSET + VERTICAL_HOUR_LINE_WIDTH}px,
+        white ${HOUR_WIDTH}px
+    );
 `
 
 const Times = styled.div`
@@ -182,8 +190,7 @@ class Schedule extends Component {
             }
         }
 
-        this.startTime = moment("2019-04-06T17:00:00.000Z");
-
+        this.startTime = moment("2019-10-25T23:00:00.000Z");
     }
 
     componentDidMount() {
@@ -403,7 +410,9 @@ class Schedule extends Component {
                     <Scroll scrollerRef={this.scrollerRef}/>
                 </HideOnMobile>
                 <HideAboveMobile as={Container}>
-                    <TextSchedule data={this.state.records}/>
+                    {console.log("HELLO")}
+                    {console.log(this.state.records)}
+                    <TextSchedule data={this.state.records} color={HOVER_BLUE}/>
                 </HideAboveMobile>
             </>
         )

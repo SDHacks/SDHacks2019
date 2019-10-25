@@ -13,15 +13,21 @@ const PaddedRow = styled.div`
     margin: 2rem 0;
     font-size: 2rem;
 `
+
+const ScheduleHeader = styled(SectionHeader)`
+    color: ${props => props.color || 'white'};
+    padding-top: 2rem;
+`
+
 const SectionSubHeader = styled.div`
-    color: white;
+    color: ${props => props.color || 'white'};
     font-size: 1.75rem;
     font-weight: 300;   
 `
 
 const ScheduleTimes = styled.div`
     padding-right: 3rem;
-    color: white;
+    color: ${props => props.color || 'white'};
     font-size: 1.25rem;
 `
 
@@ -31,6 +37,7 @@ const EventContainer = styled.div`
 
 const EventName = styled.div`
     font-size: 1.5rem;
+    color: ${props => props.color || 'white'};
 `
 
 const PaddedDay = styled.div`
@@ -216,9 +223,6 @@ class Schedule extends Component {
             const startTime = record['startTime'];
             const title = record['title'];
 
-            console.log(day)
-            console.log(this.isFriday(startTime))
-
             if(day === 0) {
                 // make sure startTime is friday
                 if(!this.isFriday(startTime)) {
@@ -245,11 +249,11 @@ class Schedule extends Component {
                 // assemble the required fields and push into the list
                 eventSchedule.push(
                     <EventContainer className="w-100 d-flex d-inline-block">
-                        <ScheduleTimes className="w-50 text-right">
+                        <ScheduleTimes className="w-50 text-right" color={this.props.color}>
                             <div>{formattedStartTime}</div>
                             <div>to {formattedEndTime}</div>
                         </ScheduleTimes>
-                        <EventName className="w-50 text-left text-white">
+                        <EventName className="w-50 text-left" color={this.props.color}>
                             <div>{title}</div>
                         </EventName>
                     </EventContainer>
@@ -257,10 +261,10 @@ class Schedule extends Component {
             } else {
                 eventSchedule.push(
                     <EventContainer className="w-100 d-flex d-inline-block">
-                        <ScheduleTimes className="w-50 text-right">
+                        <ScheduleTimes className="w-50 text-right" color={this.props.color}>
                             <div>{formattedStartTime}</div>
                         </ScheduleTimes>
-                        <EventName className="w-50 text-left text-white">
+                        <EventName className="w-50 text-left" color={this.props.color}>
                             <div>{title}</div>
                         </EventName>
                     </EventContainer>
@@ -281,18 +285,21 @@ class Schedule extends Component {
         if (this.props.data) {
             return  (
                 <div className="container">
+                    <div className="row justify-content-center">
+                        <ScheduleHeader color={this.props.color}>Schedule</ScheduleHeader>
+                    </div>
                     <PaddedRow className="row justify-content-center">
-                        <div className="col col-md-4">
-                            <SectionSubHeader className="text-center">Friday, October 25th</SectionSubHeader>
-                            {this.renderStaticSchedule(0, this.state.records)}
+                        <div className="col col-md-s4">
+                            <SectionSubHeader className="text-center" color={this.props.color}>Friday, October 25th</SectionSubHeader>
+                            {this.renderStaticSchedule(0, this.props.data)}
                         </div>
                         <div className="col col-md-4">
-                            <SectionSubHeader className="text-center">Saturday, October 26th</SectionSubHeader>
-                            {this.renderStaticSchedule(1, this.state.records)}
+                            <SectionSubHeader className="text-center" color={this.props.color}>Saturday, October 26th</SectionSubHeader>
+                            {this.renderStaticSchedule(1, this.props.data)}
                         </div>
                         <div className="col col-md-4">
-                            <SectionSubHeader className="text-center">Sunday, October 27th</SectionSubHeader>
-                            {this.renderStaticSchedule(2, this.state.records)}
+                            <SectionSubHeader className="text-center" color={this.props.color}>Sunday, October 27th</SectionSubHeader>
+                            {this.renderStaticSchedule(2, this.props.data)}
                         </div>
                     </PaddedRow>
                 </div>
@@ -328,7 +335,6 @@ class Schedule extends Component {
             </ScheduleSection>
         )
     }
-
 }
 
 export default Schedule;

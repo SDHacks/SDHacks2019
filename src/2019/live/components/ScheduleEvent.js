@@ -9,9 +9,11 @@ import {
     CAL_BG,
     ROW_HEIGHT,
     ROW_MARGIN_TOP,
-    LIGHT_BLUE
+    LIGHT_BLUE,
+    HEADER_BLUE
 } from '../constants';
 import { PURPLE } from '../../constants';
+
 
 const LineContainer = styled.div`
     width: ${props => props.duration ? 
@@ -36,7 +38,7 @@ const Line = styled.div`
     height: 4px;
     width: 100%;
     margin-top: 0.5rem;
-    box-shadow: 0px 0px 5px #5CCBE2;
+    box-shadow: 0px 0px 5px #A9A9A9;
     &::before {
         content: '';
         display: inline-block;
@@ -47,7 +49,7 @@ const Line = styled.div`
         left: -5px;
         top: 5px;
         border-radius: 50%;
-        box-shadow: 0px 0px 5px #5CCBE2;
+        box-shadow: 0px 0px 5px #A9A9A9;
     }
 
     &::after {
@@ -60,7 +62,7 @@ const Line = styled.div`
         right: -5px;
         top: 5px;
         border-radius: 50%; 
-        box-shadow: 0px 0px 5px #5CCBE2;    
+        box-shadow: 0px 0px 5px #A9A9A9;    
     }
 `
 
@@ -75,7 +77,7 @@ const Title = styled.div`
 
     &:hover {
         cursor: pointer;
-        color: ${LIGHT_BLUE}
+        color: ${HEADER_BLUE}
     }
 `
 
@@ -87,7 +89,6 @@ const Time = styled.div`
 const Location = styled.div`
     color: black;
 `
-
 
 class ScheduleEvent extends Component {
 
