@@ -75,7 +75,7 @@ const Item = styled.div`
 `
 
 const Cal = styled.img`
-    height: 1.5rem;
+    height: 1.25rem;
 `
 
 function DropdownItem(props) {

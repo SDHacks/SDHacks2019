@@ -26,15 +26,15 @@ const Container = styled.div`
 const AnnouncementTitle = styled.div`
     background: ${HEADER_BLUE};
     color: white;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
     border-top-left-radius: ${BORDER_RADIUS};
     border-top-right-radius: ${BORDER_RADIUS};
 `
 
 const AnnouncementIcon = styled.img`
-    //height: 1.5rem;
-    width: 70%;
+    height: 1.25rem;
+    //width: 70%;
 
     ${mediaBreakpointDown('sm', `
         width: 60%;
