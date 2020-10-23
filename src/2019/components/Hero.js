@@ -72,7 +72,7 @@ class Hero extends Component {
                                 <HeroImage src="/logo.svg" className="img-fluid" />
                                 <HeroCopy className="text-center">
 
-                                    <HeroContent>October 25 - 27, 2019</HeroContent>
+                                    <HeroContent>February 19 - 21, 2021</HeroContent>
                                     <HeroContent>RIMAC, UC San Diego</HeroContent>
 
                                     <Button href="https://www.tesc.events/register/sdhacks2019" target="_blank" className="text-white">
