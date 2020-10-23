@@ -73,7 +73,7 @@ class Hero extends Component {
                                 <HeroCopy className="text-center">
 
                                     <HeroContent>February 19 - 21, 2021</HeroContent>
-                                    <HeroContent>RIMAC, UC San Diego</HeroContent>
+                                    <HeroContent>Completely Virtual</HeroContent>
 
                                     <Button href="https://www.tesc.events/register/sdhacks2019" target="_blank" className="text-white">
                                         <CTA className="btn btn-outline-light" >
