@@ -87,7 +87,7 @@ class Faq extends Component {
                                     </FaqBox>
                                     <FaqBox>
                                         <FaqQuestion>Are there any rules?</FaqQuestion>
-                                        <FaqAnswer>As a Major League Hacking member event, we are adopting Major League Hacking’s Code of Conduct, which requires you to respect others and help us keep SD Hacks a safe space for everyone. If you want your project to be considered for an award, you may only submit work that your team wrote during the hackathon.</FaqAnswer>
+                                        <FaqAnswer>As a Major League Hacking member event, we are adopting Major League Hacking’s <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a>, which requires you to respect others and help us keep SD Hacks a safe space for everyone. If you want your project to be considered for an award, you may only submit work that your team wrote during the hackathon.</FaqAnswer>
                                     </FaqBox>
                                 </div>
                             </div>
