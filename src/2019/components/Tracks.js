@@ -75,6 +75,7 @@ const Fish = styled.img`
 class Tracks extends Component {
     render() {
         return (
+            /*
             <TracksSection id="tracks">
                 <Container className="d-flex mx-auto h-100">
                     <SectionContent>
@@ -99,6 +100,28 @@ class Tracks extends Component {
                                     <TracksDescription>With more students receiving a college education, it is imperative that they can seize every opportunity. Whether it's taking a step into academia or improving the quality of one's education, construct a project that will assist in expanding students' knowledge.</TracksDescription>
                                 </div>
                             </div>
+                            <div className="row justify-content-center">
+                                <Fish src="/sea-animals/fish.svg" />
+                            </div>
+                        </div>
+                    </SectionContent>
+                </Container>
+            </TracksSection>
+            */
+           <TracksSection id="tracks">
+                <Container className="d-flex mx-auto h-100">
+                    <SectionContent>
+                        <div className="container-fluid">
+                            <div className="row justify-content-center">
+                                <TracksHeader>Tracks</TracksHeader>
+                            </div>
+                            <div className="row justify-content-center">
+                                <div className="col-md-4 text-center">
+                                    <TracksImg src="/tracks/sustainability.svg" />
+                                    <TracksTitle>Tracks</TracksTitle>
+                                    <TracksDescription>Tracks will be revealed soon!</TracksDescription>
+                                </div>
+                                </div>
                             <div className="row justify-content-center">
                                 <Fish src="/sea-animals/fish.svg" />
                             </div>

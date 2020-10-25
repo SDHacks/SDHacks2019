@@ -303,11 +303,11 @@ class Schedule extends Component {
                         </div>
                     </PaddedRow>
                 </div>
-
             )
         }
 
         return (
+            /*
             <ScheduleSection id="schedule">
                 <Container className="d-flex mx-auto h-100">
                     <SectionContent data-entrance="fade">
@@ -332,6 +332,24 @@ class Schedule extends Component {
                         </div>
                     </SectionContent>
                 </Container>
+            </ScheduleSection>
+            */
+           <ScheduleSection id="schedule">
+           <Container className="d-flex mx-auto h-100">
+               <SectionContent data-entrance="fade">
+                   <div className="container-fluid h-75">
+                       <div className="row justify-content-center">
+                           <SectionHeader>Schedule</SectionHeader>
+                       </div>
+                       <PaddedRow className="row justify-content-center">
+                           <div className="col col-md-4">
+                               <SectionSubHeader className="text-center">Schedule will be revealed soon!</SectionSubHeader>
+                               {this.renderStaticSchedule(0, this.state.records)}
+                           </div>
+                        </PaddedRow>
+                    </div>
+                </SectionContent>
+            </Container>
             </ScheduleSection>
         )
     }
