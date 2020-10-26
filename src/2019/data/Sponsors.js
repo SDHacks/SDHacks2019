@@ -1,7 +1,7 @@
 const tierOneSponsor = [
     {
-        name: 'Naval Information Warfare Center - Pacific',
-        logo: '/sponsors/niwc.svg',
+        name: 'SPAWAR Systems Center - Pacific',
+        logo: '/sponsors/spawar.svg',
         link: 'https://www.public.navy.mil/navwar/NIWC-Pacific/Pages/default.aspx',
         width: '50'
     }
@@ -15,12 +15,6 @@ const tierTwoSponsor = [
         width: '100'
     },
     {
-        name: 'Activbody',
-        logo: '/sponsors/activbody.svg',
-        link: 'https://activbody.com/',
-        size: '100'
-    },
-    {
         name: 'UCSD CSE',
         logo: '/sponsors/jsoe-cse.svg',
         link: 'https://cse.ucsd.edu/',
@@ -29,33 +23,10 @@ const tierTwoSponsor = [
 ].map(x => ({...x, tier: 1}));
 
 const tierThreeSponsor = [
-    {
-        name: 'Amazon Web Services',
-        logo: '/sponsors/aws.svg',
-        link: 'https://aws.amazon.com/',
-        width: '60'
-    }, 
-    {
-        name: 'Surcle',
-        logo: '/sponsors/surcle.svg',
-        link: 'https://surcle.io',
-        width: '90'
-    },
-    {
-        name: 'Costar',
-        logo: '/sponsors/costar.svg',
-        link: 'https://www.costar.com/',
-        width: '90'
-    }
+
 ].map(x => ({...x, tier: 2}));
 
 const tierFourSponsor = [
-    {
-        name: 'Microsoft',
-        logo: '/sponsors/microsoft.svg',
-        link: 'https://www.microsoft.com/en-us/',
-        width: '80'
-    },
     {
         name: 'UCSD ECE',
         logo: '/sponsors/jsoe-ece.svg',
@@ -63,15 +34,87 @@ const tierFourSponsor = [
         width: '80'
     },
     {
-        name: 'Wolfram',
-        logo: '/sponsors/wolfram.svg',
-        link: 'https://www.wolfram.com/',
-        width: '80'
-    },
-    {
         name: 'Stickermule',
         logo: '/sponsors/sticker-mule.svg',
         link: 'http://hackp.ac/mlh-stickermule-hackathons',
+        width: '80'
+    },
+    {
+        name: 'Fleet Readiness Center',
+        logo: '/sponsors/frc.svg',
+        link: 'https://frcsw.navair.navy.mil/',
+        width: '80'
+    },
+    {
+        name: 'DocuSign',
+        logo: '/sponsors/docusign.svg',
+        link: 'https://www.docusign.com/',
+        width: '80'
+    },
+    {
+        name: 'Qualcomm Institute',
+        logo: '/sponsors/qi.svg',
+        link: 'https://qi.ucsd.edu/',
+        width: '80'
+    },
+    {
+        name: 'Cisco',
+        logo: '/sponsors/cisco.png',
+        link: 'https://www.cisco.com/',
+        width: '80'
+    },
+    {
+        name: 'Webroot',
+        logo: '/sponsors/webroot.svg',
+        link: 'https://www.webroot.com/us/en',
+        width: '80'
+    },
+    {
+        name: 'Palantir',
+        logo: '/sponsors/palantir.png',
+        link: 'https://www.palantir.com/',
+        width: '80'
+    },
+    {
+        name: 'Macys Tech',
+        logo: '/sponsors/macys.svg',
+        link: 'https://technology.macysjobs.com/',
+        width: '80'
+    },
+    {
+        name: 'Aorus',
+        logo: '/sponsors/aorus.png',
+        link: 'https://www.aorus.com/',
+        width: '80'
+    },
+    {
+        name: 'Gigabyte',
+        logo: '/sponsors/gigabyte.png',
+        link: 'https://www.gigabyte.com/',
+        width: '80'
+    },
+    {
+        name: 'Nanome',
+        logo: '/sponsors/nanome.svg',
+        link: 'https://nanome.ai/',
+        width: '80'
+    },
+    {
+        name: 'Microduino',
+        logo: '/sponsors/microduino.svg',
+        link: 'https://microduinoinc.com/',
+        width: '80'
+    },
+    {
+        name: 'Ritual Energy',
+        logo: '/sponsors/ritual.png',
+        link: 'https://www.ritualenergy.com/',
+        width: '80'
+    },
+    {
+        name: 'UCSD JSOE',
+        logo: '/sponsors/jsoe.svg',
+        link: 'https://jacobsschool.ucsd.edu/',
         width: '80'
     }
 ].map(x => ({...x, tier: 2}));
@@ -79,25 +122,25 @@ const tierFourSponsor = [
 const tierOnePartner = [
     {
         name: 'ACM',
-        logo: '/partners/acm.svg',
+        logo: '/partners/ACM logo.png',
         link: 'http://www.acm.org/',
         width: '60'
     },
     {
-        name: 'BMES',
-        logo: '/partners/bmes.svg',
-        link: 'https://bmes.ucsd.edu',
+        name: 'Open Source',
+        logo: '/partners/opensource.png',
+        link: 'https://os-ucsd.ucsd.edu/',
         width: '60'
     },
     {
         name: 'CSES',
-        logo: '/partners/cses.svg',
+        logo: '/partners/cses.png',
         link: 'https://cses.ucsd.edu/#/',
         width: '60'
     },
     {
         name: 'DS3',
-        logo: '/partners/ds3.svg',
+        logo: '/partners/ds3.png',
         link: 'https://www.facebook.com/DS3UCSD/',
         width: '60'
     }
@@ -105,34 +148,36 @@ const tierOnePartner = [
 
 const tierTwoPartner = [
     {
-        name: 'ESW',
-        logo: '/partners/esw.svg',
+        name: 'Engineers for A Cause',
+        logo: '/partners/efc.jpeg',
+        // should update website link
         link: 'https://eswtritons.wordpress.com',
         width: '55'
     },
     {
         name: 'IEEE',
-        logo: '/partners/ieee.svg',
+        logo: '/partners/ieee.png',
         link: 'http://www.ieee.org/portal/index.jsp',
-        width: '55'
+        width: '80'
     },
     {
         name: 'SWE',
-        logo: '/partners/swe.svg',
+        logo: '/partners/swe.png',
         link: 'http://swe.ucsd.edu/',
         width: '55'
     },
     {
-        name: 'Triton XR',
-        logo: '/partners/triton-xr.svg',
-        link: 'http://tritonxr.ucsd.edu/',
-        width: '35'
+        name: 'Women in Computing',
+        logo: '/partners/wic.png',
+        link: 'https://wic.ucsd.edu/',
+        width: '70'
     },
     {
-        name: 'TSE',
-        logo: '/partners/tse.svg',
+        name: 'Hack',
+        logo: '/partners/hack.png',
+        // need to update website link
         link: 'http://tse.ucsd.edu/',
-        width: '30'
+        width: '45'
     }
 ].map(x => ({...x, tier: 3}));
 
