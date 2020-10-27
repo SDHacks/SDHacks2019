@@ -171,13 +171,6 @@ const tierTwoPartner = [
         logo: '/partners/wic.png',
         link: 'https://wic.ucsd.edu/',
         width: '70'
-    },
-    {
-        name: 'Hack',
-        logo: '/partners/hack.png',
-        // need to update website link
-        link: 'http://tse.ucsd.edu/',
-        width: '45'
     }
 ].map(x => ({...x, tier: 3}));
 
