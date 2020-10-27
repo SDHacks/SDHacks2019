@@ -1,13 +1,22 @@
 const tierOneSponsor = [
+    
+].map(x => ({...x, tier: 0}));
+
+const tierTwoSponsor = [
+    
+].map(x => ({...x, tier: 1}));
+
+const tierThreeSponsor = [
+
+].map(x => ({...x, tier: 2}));
+
+const tierFourSponsor = [
     {
         name: 'SPAWAR Systems Center - Pacific',
         logo: '/sponsors/spawar.svg',
         link: 'https://www.public.navy.mil/navwar/NIWC-Pacific/Pages/default.aspx',
         width: '50'
-    }
-].map(x => ({...x, tier: 0}));
-
-const tierTwoSponsor = [
+    },
     {
         name: 'Northrop Grumman',
         logo: '/sponsors/northrop.svg',
@@ -19,14 +28,7 @@ const tierTwoSponsor = [
         logo: '/sponsors/jsoe-cse.svg',
         link: 'https://cse.ucsd.edu/',
         size: '100'
-    }
-].map(x => ({...x, tier: 1}));
-
-const tierThreeSponsor = [
-
-].map(x => ({...x, tier: 2}));
-
-const tierFourSponsor = [
+    },
     {
         name: 'UCSD ECE',
         logo: '/sponsors/jsoe-ece.svg',
