@@ -151,7 +151,7 @@ const tierTwoPartner = [
         name: 'Engineers for A Cause',
         logo: '/partners/efc.jpeg',
         // should update website link
-        link: 'https://eswtritons.wordpress.com',
+        link: '',
         width: '55'
     },
     {
