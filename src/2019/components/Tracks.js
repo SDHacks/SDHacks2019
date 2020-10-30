@@ -1,88 +1,80 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, {Component} from 'react';
+import styled from 'styled-components';
 
-import { Page, Container, SectionHeader, SectionContent } from "../styles";
+import {
+    Page,
+    Container,
+    SectionHeader,
+    SectionContent,
+} from '../styles';
 
-import { mediaBreakpointDown } from "../../breakpoints";
+import {mediaBreakpointDown} from '../../breakpoints';
 
 const TracksSection = styled(Page)`
-  height: auto;
-`;
+    height: auto;
+`
 
 const TracksHeader = styled(SectionHeader)`
-  display: inline-block;
-  text-align: center;
-`;
+    display: inline-block;
+    text-align: center;
+`
 
 const TracksImg = styled.img`
-  width: 8.5rem;
-  margin-top: 3rem;
+    width: 8.5rem;
+    margin-top: 3rem;
 
-  ${mediaBreakpointDown(
-    "sm",
-    `
+    ${mediaBreakpointDown('sm', `
         width: 40%;
-    `
-  )}
-`;
+    `)}
+`
 
 const ThirdTrackImg = styled.img`
-  width: 19rem;
+    width: 19rem;
 
-  ${mediaBreakpointDown(
-    "sm",
-    `
+    ${mediaBreakpointDown('sm', `
         width: 80%;
-    `
-  )}
-`;
+    `)}
+`
 
 const TracksTitle = styled.div`
-  font-size: 2rem;
-  display: block;
-  text-align: center;
-`;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+`
 
 const ThirdTracksTitle = styled.div`
-  margin-top: -12rem;
-  font-size: 2rem;
-  display: block;
-  text-align: center;
-
-  ${mediaBreakpointDown(
-    "sm",
-    `
+    margin-top: -12rem;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    
+    ${mediaBreakpointDown('sm', `
         margin-top: -8rem;
-    `
-  )}
-`;
+    `)}
+`
 
 const TracksDescription = styled.div`
-  display: block;
-  text-align: left;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 45px;
-  padding: 1.5rem;
-  z-index: 100;
-  position: relative;
+    display: block;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 45px;
+    padding: 1.5rem;
+    z-index: 100;
+    position: relative;
 
-  ${mediaBreakpointDown(
-    "md",
-    `
+    ${mediaBreakpointDown('md', `
         text-align: center;
-    `
-  )}
-`;
+    `)}
+`
 
 const Fish = styled.img`
     width: 80%
     margin-top: 1rem;
-`;
+`
 
 class Tracks extends Component {
-  render() {
-    return (
-      /*
+    render() {
+        return (
             <TracksSection id="tracks">
                 <Container className="d-flex mx-auto h-100">
                     <SectionContent>
@@ -114,26 +106,8 @@ class Tracks extends Component {
                     </SectionContent>
                 </Container>
             </TracksSection>
-            */
-      <TracksSection id="tracks">
-        <Container className="d-flex mx-auto h-100">
-          <SectionContent>
-            <div className="container-fluid">
-              <div className="row justify-content-center mb-5">
-                <TracksHeader>Tracks</TracksHeader>
-              </div>
-              <div className="row justify-content-center">
-                <h1>Tracks will be revealed soon!</h1>
-              </div>
-              <div className="row justify-content-center">
-                <Fish src="/sea-animals/fish.svg" />
-              </div>
-            </div>
-          </SectionContent>
-        </Container>
-      </TracksSection>
-    );
-  }
+        )
+    }
 }
 
 export default Tracks;

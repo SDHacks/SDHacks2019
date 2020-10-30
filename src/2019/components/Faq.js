@@ -63,31 +63,41 @@ class Faq extends Component {
                                         <FaqAnswer>Any college or high school students over 18 years of age from anywhere in the world are eligible. This includes graduate students, but be sure to understand any agreements you’ve made with your university with regards to research and IP. If you are enrolled at a UC campus but not yet 18, you are also eligible to participate.</FaqAnswer>
                                     </FaqBox>
                                     <FaqBox>
-                                        <FaqQuestion>How big can teams be?</FaqQuestion>
-                                        <FaqAnswer>Teams at SD Hacks can have up to 4 people.</FaqAnswer>
+                                        <FaqQuestion>How do I get there?</FaqQuestion>
+                                        <FaqAnswer>The address for <FaqLink href="https://goo.gl/maps/kQTiJNZowP72" target="_blank">RIMAC Arena</FaqLink> is 9730 Hopkins Dr, La Jolla, CA 92093. Travel reimbursements will be distributed on a case-by-case basis.</FaqAnswer>
                                     </FaqBox>
                                     <FaqBox>
-                                        <FaqQuestion>What if I don't have a team?</FaqQuestion>
-                                        <FaqAnswer>We will host a team formation event at the beginning of the hackathon so that no one has to hack alone (unless they want to). We allow teams of up to four hackers. If you do have a team, we will do our best to accept you all. Make sure ALL members apply and join the same team by using your unique team code.</FaqAnswer>
-                                    </FaqBox>    
+                                        <FaqQuestion>Do I have to pay to get in?</FaqQuestion>
+                                        <FaqAnswer>Nope!</FaqAnswer>
+                                    </FaqBox>
+
+                                    <FaqBox>
+                                        <FaqQuestion>When should I show up and when should I leave?</FaqQuestion>
+                                        <FaqAnswer>You should plan to arrive at the hackathon late Friday (Oct 25th) evening and to leave early Sunday (Oct 27th) afternoon. A detailed schedule will be released closer to the event date.</FaqAnswer>
+                                    </FaqBox>
+
+                                    <FaqBox>
+                                        <FaqQuestion>Do I have to pay for parking?</FaqQuestion>
+                                        <FaqAnswer>Yes, parking permits are $3 per hr on Friday evening up to 11pm. After 11pm on Friday, parking is free for the weekend. The closest parking to RIMAC Arena is the <FaqLink href="https://goo.gl/maps/iqXbtjKwjSR7zeix8" target="_blank">Hopkins Parking Structure</FaqLink>.</FaqAnswer>
+                                    </FaqBox>
                                 </div>
                                 <div className="col-md-6"> 
                                     <FaqBox>
-                                        <FaqQuestion>Is there a registration fee?</FaqQuestion>
-                                        <FaqAnswer>SD Hacks is completely free for participants!</FaqAnswer>
+                                        <FaqQuestion>What if I don't have a team?</FaqQuestion>
+                                        <FaqAnswer>We will host a team formation event at the beginning of the hackathon so that no one has to hack alone (unless they want to). We allow teams of up to four hackers. If you do have a team, we will do our best to accept you all. Make sure ALL members apply and join the same team by using your unique team code.</FaqAnswer>
                                     </FaqBox>
                                     <FaqBox>
-                                        <FaqQuestion>What can I build or design?</FaqQuestion>
-                                        <FaqAnswer>You can build anything you can think of, including web apps, mobile apps, hardware hacks, and other software projects that cater to the hackathon tracks.</FaqAnswer>
+                                        <FaqQuestion>What should I bring?</FaqQuestion>
+                                        <FaqAnswer>Bring your student ID, computer, any external peripherals you may need (chargers, monitors, etc.), any other hardware that you definitely plan on using, and an open mind. Also bring a change of clothes, a toothbrush, and any other toiletries you may need. You may also bring a sleeping bag if you plan to nap.</FaqAnswer>
                                     </FaqBox>
                                     <FaqBox>
                                         <FaqQuestion>What do volunteers and mentors do?</FaqQuestion>
-                                        <FaqAnswer>General volunteers help out with logistics during the event such as technical workshops, social events, and other areas to make SD Hacks possible!</FaqAnswer>
-                                        <FaqAnswer>Mentors assist students with their projects when they are stuck. They'll be available to help students with any questions they might have, especially technical questions in a domain the mentor is familiar with.</FaqAnswer>
+                                        <FaqAnswer>General volunteers help out with logistics during the event such as check in, clean up, food distribution, and other tasks that make SD Hacks possible!</FaqAnswer>
+                                        <FaqAnswer>Mentors assist students with their projects when stuck. They'll be floating around the hacking space helping students with any questions they might have, especially technical questions in a domain the mentor is familiar with.</FaqAnswer>
                                     </FaqBox>
                                     <FaqBox>
                                         <FaqQuestion>Are there any rules?</FaqQuestion>
-                                        <FaqAnswer>As a Major League Hacking member event, we are adopting Major League Hacking’s <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a>, which requires you to respect others and help us keep SD Hacks a safe space for everyone. If you want your project to be considered for an award, you may only submit work that your team wrote during the hackathon.</FaqAnswer>
+                                        <FaqAnswer>As a Major League Hacking member event, we are adopting Major League Hacking’s <FaqLink href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="blank">Code of Conduct</FaqLink>, which requires you to respect others and help us keep SD Hacks a safe space for everyone. If you want your project to be considered for an award, you may only submit work that your team wrote during the hackathon.</FaqAnswer>
                                     </FaqBox>
                                 </div>
                             </div>
